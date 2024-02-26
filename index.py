@@ -80,4 +80,13 @@ def eval_num_expression(exp: str, tab_cout = 0):
         return tokens[0][1]
     return None
 
-print(eval_num_expression(exp2))
+
+if __name__ == "__main__":
+    input_count = int(input())
+    for i in range(input_count):
+        exp = input()
+        evaled = eval_num_expression(exp)
+        if evaled == None:
+            print("ERROR")
+        else:
+            print(evaled)
